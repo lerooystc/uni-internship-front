@@ -1,0 +1,558 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body onload="ready()">
+    <header class="header">
+      <nav class="upper">
+        <div class="navbar" id="logo">
+          <img src="icons/logo.svg">
+          <p class="mon-500 green" id="logo-text">Healthyfood</p>
+        </div>
+        <div class="navbar" id="city">
+          <img src="icons/map.png">
+          <p id="city-text">Выбрать город</p>
+        </div>
+        <div class="navbar" id="phone">
+          <img src="icons/phone.svg">
+          <p id="phone-text">8-(123)-456-78-90</p>
+        </div>
+        <div class="navbar" id="icons">
+          <img src="icons/pfp.svg">
+          <img src="icons/cart.svg" id="cart">
+        </div>
+        <div class="navbar" id="mobile-menu">
+          <div id="bar-1" class="menu-bar"></div>
+          <div id="bar-2" class="menu-bar"></div>
+          <div id="bar-3" class="menu-bar"></div>
+          <div id="nav-menu">
+            <div id="search-city">
+              <input type="search" id="nav-search" class="mon-400" placeholder="Поиск">
+              <p id="city-picker" class="jost-500 white">Выбрать город</p>
+            </div>
+            <div id="nav-links">
+              <a href="#welcome" class="nl-text mon-500 white">О нас</a>
+              <a href="#why-us" class="nl-text mon-500 white">Как мы работаем</a>
+              <a href="#diet-choice" class="nl-text mon-500 white">Меню</a>
+              <a href="#order-details" class="nl-text mon-500 white">Как оформить заказ</a>
+              <a href="#delivery-info" class="nl-text mon-500 white">Доставка и оплата</a>
+            </div>
+            <div id="nav-contacts">
+              <p id="nc-header" class="jost-500 white">Контакты</p>
+              <p id="nc-phone" class="mon-400 white">+7 (123) 456-78-90</p>
+              <div>
+                <img src="icons/vk.svg" class="header-icon">
+                <img src="icons/telegram.svg" class="header-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="lower">
+        <a href="#welcome" class="lower-element">О нас</a>
+        <a href="#why-us" class="lower-element">Как мы работаем</a>
+        <a href="#diet-choice" class="lower-element">Меню</a>
+        <a href="#order-details" class="lower-element">Как оформить заказ</a>
+        <a href="#delivery-info" class="lower-element">Доставка и оплата</a>
+      </nav>
+    </header>
+    <div id="welcome">
+      <div id="welcome-main">
+        <div id="welcome-text">
+          <div>
+            <p class="jost-600 dark-blue" id="delivery-text">ДОСТАВКА <span class="green-button">ПРАВИЛЬНОГО ПИТАНИЯ</span> НА ДОМ</p>
+          </div>
+          <div>
+            <p class="mon-400 base" id="delivery-text-smaller">Сбалансированные рационы питания с суточной нормой витаминов доставкой на дом!</p>
+          </div>
+          <div id="order-buttons">
+            <button id="order-button" class="jost-600 dg-shadow">Заказать</button>
+            <button id="diet-button" class="jost-600">Подобрать рацион</button>
+          </div>
+        </div>
+        <div id="meal-options">
+          <p class="jost-500" id="meal-options-h1">Популярные <span class="green-button">блюда</span></p>
+          <div id="meals-flex">
+            <div class="meal-option dg-shadow">
+              <img src="icons/rice.png" class="meal-photo">
+              <div class="meal-desc">
+                <p class="jost-500 dark-blue meal-desc-elem mde-1">
+                  Рис с овощами и рыбой
+                </p>
+                <p class="mon-500 green-button meal-desc-elem mde-2">
+                  300 ккал
+                </p>
+                <p class="mon-400 grey meal-desc-elem mde-3">
+                  ___________________ <br>
+                  Листья салата, пекинская капуста, яйцо, авокадо, помидоры <br>
+                  _________________________
+                </p>
+                <div class="meal-desc-elem">
+                  <span class="mon-600 green-button mde-4">450 ₽</span>
+                  <span class="mon-500 grey mde-5">500 ₽</span>
+                  <img src="icons/heart.svg" style="margin-left: 20px;">
+                  <img src="icons/cart-small.svg">
+                </div>
+              </div>
+            </div>
+            <div class="meal-option dg-shadow">
+              <img src="icons/salad.png" class="meal-photo">
+              <div class="meal-desc">
+                <p class="jost-500 dark-blue meal-desc-elem mde-1">
+                  Салат с яйцом и фасолью
+                </p>
+                <p class="mon-500 green-button meal-desc-elem mde-2">
+                  200 ккал
+                </p>
+                <p class="mon-400 grey meal-desc-elem mde-3">
+                  ___________________ <br>
+                  Листья салата, морковь, яйцо, фасоль, тушеная капуста <br>
+                  _________________________
+                </p>
+                <div class="meal-desc-elem">
+                  <span class="mon-600 green-button mde-4">300 ₽</span>
+                  <span class="mon-500 grey mde-5">350 ₽</span>
+                  <img src="icons/heart.svg" style="margin-left: 20px;">
+                  <img src="icons/cart-small.svg">
+                </div>
+              </div>
+            </div>
+            <div class="meal-option dg-shadow">
+              <img src="icons/sumsalad.png" class="meal-photo">
+              <div class="meal-desc">
+                <p class="jost-500 dark-blue meal-desc-elem mde-1">
+                  Свежий летний салат
+                </p>
+                <p class="mon-500 green-button meal-desc-elem mde-2">
+                  200 ккал
+                </p>
+                <p class="mon-400 grey meal-desc-elem mde-3">
+                  ___________________ <br>
+                  Листья салата, пекинская капуста, яйцо, авакадо, орехи <br>
+                  _________________________
+                </p>
+                <div class="meal-desc-elem">
+                  <span class="mon-600 green-button mde-4">250 ₽</span>
+                  <span class="mon-500 grey mde-5">300 ₽</span>
+                  <img src="icons/heart.svg" style="margin-left: 20px;">
+                  <img src="icons/cart-small.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="welcome-images">
+        <div id="welcome-images-2">
+          <img src="icons/welcome-image-1.png" class="welcome-image" id="welcome-image-1">
+          <img src="icons/welcome-image-2.png" class="welcome-image" id="welcome-image-2">
+          <img src="icons/welcome-image-3.png" class="welcome-image" id="welcome-image-3">
+          <img src="icons/welcome-image-4.png" class="welcome-image" id="welcome-image-4">
+          <img src="icons/welcome-image-5.png" class="welcome-image dg-shadow" id="welcome-image-5">
+        </div>
+      </div>
+    </div>
+    <div id="category-options">
+      <p class="jost-600 dark-blue" id="category-text">Выбирайте <span class="green-button">по категориям</span></p>
+      <div id="categories">
+        <div class="category dg-shadow" id="big-photo-cat" style="background: #FEEFEA;">
+          <img class="category-photo" id="big-photo" src="icons/cat-6.png">
+          <div class="mon-600 dark-blue category-desc">
+            <p class="category-desc-text-1">Салаты</p>
+            <p class="category-desc-text-2 green-button">20 элементов</p>
+          </div>
+        </div>
+        <div class="category dg-shadow" style="background: #FFF3FF;">
+          <img class="category-photo" src="icons/cat-1.png">
+          <div class="mon-600 dark-blue category-desc">
+            <p class="category-desc-text-1">Гарниры</p>
+            <p class="category-desc-text-2 green-button">220 элементов</p>
+          </div>
+        </div>
+        <div class="category dg-shadow" style="background: #F2FCE4;">
+          <img class="category-photo" src="icons/cat.png">
+          <div class="mon-600 dark-blue category-desc">
+            <p class="category-desc-text-1">Супы</p>
+            <p class="category-desc-text-2 green-button">10 элементов</p>
+          </div>
+        </div>
+        <div class="category dg-shadow" style="background: #FEEFEA;">
+          <img class="category-photo" src="icons/cat-2.png">
+          <div class="mon-600 dark-blue category-desc">
+            <p class="category-desc-text-1">ПП выпечка</p>
+            <p class="category-desc-text-2 green-button">40 элементов</p>
+          </div>
+        </div>
+        <div class="category dg-shadow" style="background: #ECFFEC;">
+          <img class="category-photo" src="icons/cat-3.png">
+          <div class="mon-600 dark-blue category-desc">
+            <p class="category-desc-text-1">Напитки</p>
+            <p class="category-desc-text-2 green-button">23 элемента</p>
+          </div>
+        </div>
+        <div class="category dg-shadow" style="background: #FFFAE0;">
+          <img class="category-photo" src="icons/cat-4.png">
+          <div class="mon-600 dark-blue category-desc">
+            <p class="category-desc-text-1">Морепродукты</p>
+            <p class="category-desc-text-2 green-button">3 элемента</p>
+          </div>
+        </div>
+        <div class="category dg-shadow" id="going-down" style="background: #DEF9EC;">
+          <img class="category-photo" src="icons/cat-5.png">
+          <div class="mon-600 dark-blue category-desc">
+            <p class="category-desc-text-1">Соусы</p>
+            <p class="category-desc-text-2 green-button">9 элементов</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="why-us">
+      <div id="why-us-text">
+        <p class="jost-600 dark-blue">Почему именно <span class="green-button">мы</span>?</p>
+      </div>
+      <div id="why-us-exp">
+        <div class="explanation dg-shadow">
+          <img src="icons/exp-1.svg" class="exp-photo">
+          <p class="jost-500 dark-blue exp-text-1">Лучшие продукты</p>
+          <p class="mon-400 dark-blue exp-text-2">100% натуральный состав и свежие продукты</p>
+        </div>
+        <div class="explanation dg-shadow">
+          <img src="icons/exp-2.svg" class="exp-photo">
+          <p class="jost-500 dark-blue exp-text-1">Индивидуальный подход</p>
+          <p class="mon-400 dark-blue exp-text-2">Подбор программы в соответствии с вашей целью</p>
+        </div>
+        <div class="explanation dg-shadow">
+          <img src="icons/exp-3.svg" class="exp-photo">
+          <p class="jost-500 dark-blue exp-text-1">Быстрая доставка</p>
+          <p class="mon-400 dark-blue exp-text-2">Каждый день в удобное для вас время</p>
+        </div>
+        <div class="explanation dg-shadow">
+          <img src="icons/exp-4.svg" class="exp-photo">
+          <p class="jost-500 dark-blue exp-text-1">Забота об экологии</p>
+          <p class="mon-400 dark-blue exp-text-2">Принимаем контайнеры на переработку</p>
+        </div>
+      </div>
+    </div>
+    <div id="diet-choice">
+      <div id="diet-text" class="jost-600 dark-blue">
+        Выберите <span class="green-button">рацион</span>, который подходит именно вам?
+      </div>
+      <div id="diet-filters">
+        <button class="filter-button mon-500 dark-blue">Салаты</button>
+        <button class="filter-button mon-500 dark-blue">Гарниры</button>
+        <button class="filter-button mon-500 dark-blue">Супы</button>
+        <button class="filter-button mon-500 dark-blue">ПП Выпечка</button>
+        <button class="filter-button mon-500 dark-blue">Напитки</button>
+        <input type="search" id="search-meal" placeholder="Название блюда...">
+      </div>
+      <div id="diet-cat-picker">
+        <button class="diet-cat-button jost-500 dark-blue">Стандартный</button>
+        <button class="diet-cat-button jost-500 dark-blue">Премиум</button>
+        <button class="diet-cat-button jost-500 dark-blue">Самостоятельный</button>
+      </div>
+      <div id="diet-picker">
+        <div id="calories" class="pickers">
+          <label class="picker-label jost-500 dark-blue">
+            Кол-во калорий
+            <select class="diet-select picker-item mon-400" placeholder="2 000 ккал" name="calories">
+              <option value="1500">1500</option>
+              <option value="1500">2000</option>
+              <option value="1500">2500</option>
+            </select>
+          </label>
+        </div>
+        <div id="week-day" class="pickers">
+          <label class="picker-label jost-500 dark-blue">
+            Дни недели
+            <select class="diet-select picker-item mon-400" placeholder="Понедельник" name="day">
+              <option value="monday">Понедельник</option>
+              <option value="tuesday">Вторник</option>
+              <option value="sunday">Воскресенье</option>
+           </select>
+          </label>
+        </div>
+        <div id="day-amount" class="pickers">
+          <label class="picker-label jost-500 dark-blue">
+            Количество дней
+            <div class="diet-picker-buttons picker-item">
+              <button class="diet-picker-button jost-500 dark-blue">2</button>
+              <button class="diet-picker-button jost-500 dark-blue">3</button>
+              <button class="diet-picker-button jost-500 dark-blue">5</button>
+              <button class="diet-picker-button jost-500 dark-blue">6</button>
+              <button class="diet-picker-button jost-500 dark-blue">7</button>
+            </div>
+          </label>
+        </div>
+        <div id="person-amount" class="pickers">
+          <label class="picker-label jost-500 dark-blue">
+            Количество персон
+            <div class="diet-picker-buttons picker-item">
+              <button class="diet-picker-button jost-500 dark-blue">1</button>
+              <button class="diet-picker-button jost-500 dark-blue">3</button>
+              <button class="diet-picker-button jost-500 dark-blue">6</button>
+            </div>
+          </label>
+        </div>
+        <button id="diet-picker-order-button" class="jost-600">Подобрать</button>
+        <a href="#" id="diet-more" class="jost-600 dark-blue">Подробнее</a>
+      </div>
+    </div>
+    <div id="promo">
+      <div id="promo-content">
+        <p class="promo-text-1 jost-600 white">НОВИНКИ <span class="green-button">МЕНЮ!</span></p>
+        <p class="promo-text-2 jost-600 white"><span class="green-button">Детокс</span> программа</p>
+        <div id="promo-stats">
+          <div class="promo-statline">
+            <img src="icons/time.svg">
+            <p class="promo-text-3 mon-400 white">5 дней</p>
+          </div>
+          <div class="promo-statline">
+            <img src="icons/fire.svg">
+            <p class="promo-text-3 mon-400 white">1 200 кКал</p>
+          </div>
+        </div>
+        <p class="mon-400 white" id="detox-text">Программа очищения, состоящая из смузи-коктейлей.
+          В составе натуральные продукты с прекрасным вкусовым сочетанием.
+        </p>
+        <p class="promo-text-4 jost-600 white">от 1 500 ₽</p>
+        <div id="promo-buttons">
+          <button id="promo-button" class="jost-600">Заказать</button>
+          <a href="#" id="promo-button-more" class="jost-600 green-button">Подробнее</a>
+        </div>
+      </div>
+      <img src="icons/next.svg" id="promo-arrow">
+    </div>
+    <div id="complete-meals">
+      <p id="complete-meals-header" class="jost-600 dark-blue">Готовые <span class="green-button">рационы</span></p>
+      <p id="com-meal-desc" class="mon-500 base">Вы можете исключить любой ингредиент, блюдо или тип блюда по желанию</p>
+      <div id="com-meal-examples">
+        <div class="com-meal-ex dg-shadow">
+          <img src="icons/com-meal-1.png">
+          <p class="cme-text-1 jost-500">1 000 ккал 3х-разовое</p>
+          <p class="cme-text-2 mon-400 dark-blue">Рацион состоит из 3 блюд на 850 ккал и суточной нормой всех витаминов. 
+            Предназначено для быстрого снижения веса.</p>
+          <p class="cme-text-3 jost-600 dark-blue">1 000 ₽<span class="cme-span mon-500">/ в день</span></p>
+          <button class="com-meal-button jost-600">Заказать</button>
+        </div>
+        <div class="com-meal-ex dg-shadow">
+          <img src="icons/com-meal-2.png">
+          <p class="cme-text-1 jost-500">2 000 ккал 4х-разовое</p>
+          <p class="cme-text-2 mon-400 dark-blue">Рацион состоит из 4 блюд на 2 000 ккал и суточной нормой всех витаминов. 
+            Предназначено для поддержания желаемого веса.</p>
+          <p class="cme-text-3 jost-600 dark-blue">1 000 ₽<span class="cme-span mon-500">/ в день</span></p>
+          <button class="com-meal-button jost-600">Заказать</button>
+        </div>
+        <div class="com-meal-ex dg-shadow">
+          <img src="icons/com-meal-3.png">
+          <p class="cme-text-1 jost-500">1 200 ккал 3х-разовое</p>
+          <p class="cme-text-2 mon-400 dark-blue">Рацион состоит из 3 блюд на 850 ккал и суточной нормой всех витаминов. 
+            Предназначено для быстрого снижения веса.</p>
+          <p class="cme-text-3 jost-600 dark-blue">1 200 ₽<span class="cme-span mon-500">/ в день</span></p>
+          <button class="com-meal-button jost-600">Заказать</button>
+        </div>
+      </div>
+    </div>
+    <div id="order-details">
+      <p id="order-details-header" class="jost-600 dark-blue">Как оформить <span class="green-button">заказ</span></p>
+      <p id="od-desc" class="mon-500 base">В любое место и время!</p>
+      <div id="order-exp">
+        <div class="order-explanation dg-shadow">
+          <img src="icons/task-square.svg">
+          <p class="mon-600 dark-blue order-exp-text-1">Выбираете рацион</p>
+          <p class="mon-400 base order-exp-text-2">Все блюда разделены по типу: завтраки, салаты, горячие блюда, десерты.</p>
+        </div>
+        <div class="order-explanation  dg-shadow">
+          <img src="icons/truck-tick.svg">
+          <p class="mon-600 dark-blue order-exp-text-1">Ожидаете курьера</p>
+          <p class="mon-400 base order-exp-text-2">Доставка рационов осуществляется каждый день в удобное для вас место</p>
+        </div>
+        <div class="order-explanation dg-shadow">
+          <img src="icons/ep_food.svg">
+          <p class="mon-600 dark-blue order-exp-text-1">Наслаждаетесь</p>
+          <p class="mon-400 base order-exp-text-2">Приятного аппетита!</p>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-arrangement">
+      <div id="reviews">
+        <p id="review-header" class="jost-600 white">Отзывы наших <span class="green-button">клиентов</span></p>
+        <div id="reviews-stats">
+          <div class="reviews-stat">
+            <p class="rs-text-1 mon-600 green-button">20%</p>
+            <p class="rs-text-2 mon-400 white">Скидки каждый месяц</p>
+          </div>
+          <div class="reviews-stat">
+            <p class="rs-text-1 mon-600 green-button">2 000+</p>
+            <p class="rs-text-2 mon-400 white">Клиентов</p>
+          </div>
+          <div class="reviews-stat">
+            <p class="rs-text-1 mon-600 green-button">500+</p>
+            <p class="rs-text-2 mon-400 white">Положительных отзывов</p>
+          </div>
+        </div>
+        <div id="review-examples">
+          <div class="review-example dg-shadow">
+            <img src="icons/rev-photo-1.png" class="rev-photo">
+            <div class="review-details">
+              <p class="rd-text-1 mon-600 neutral">Виктория</p>
+              <p class="rd-text-2 mon-400 grey">25 лет</p>
+              <p class="rd-text-3 mon-400 neutral-2">Потрясающая доставка! Очень вкусно, а главное полезно! Пришла в форму за месяц.</p>
+            </div>
+          </div>
+          <div class="review-example dg-shadow">
+            <img src="icons/rev-photo-2.png" class="rev-photo">
+            <div class="review-details">
+              <p class="rd-text-1 mon-600 neutral">Анна</p>
+              <p class="rd-text-2 mon-400 grey">35 лет</p>
+              <p class="rd-text-3 mon-400 neutral-2">Готовый рацион на целый день, без лишней траты времени и грязной посуды. Как же это удобно, 
+                а главное очень вкусно!</p>
+            </div>
+          </div>
+          <div class="review-example dg-shadow">
+            <img src="icons/rev-photo-3.png" class="rev-photo">
+            <div class="review-details">
+              <p class="rd-text-1 mon-600 neutral">Полина</p>
+              <p class="rd-text-2 mon-400 grey">30 лет</p>
+              <p class="rd-text-3 mon-400 neutral-2">Результат за короткое время! Очень здорово! Очень удобно, пользуюсь постоянно.</p>
+            </div>
+          </div>
+        </div>
+        <div id="rev-next-prev">
+          <button id="prev" class="np-button dg-shadow" onclick="prev()"><img src="icons/np.svg"></button>
+          <button id="next" class="np-button dg-shadow" onclick="next()"><img src="icons/np.svg"></button>
+        </div>
+      </div>
+      <div id="promo-banner">
+        <div id="pb-content">
+          <p id="pb-text-1" class="jost-600 white banner-text"><span id="mobile-green">АКЦИЯ!</span> + БЕСПЛАТНАЯ ДОСТАВКА</p>
+          <p id="pb-text-2" class="mon-500 green-button banner-text">6 блюд на двоих</p>
+          <p id="pb-text-3" class="jost-600 white banner-text">1 500 ₽/ДЕНЬ</p>
+          <button class="promo-banner-button jost-600">Заказать</button>
+        </div>
+      </div>
+      <div id="delivery-info">
+        <div id="delivery-info-text">
+          <p id="di-header" class="jost-600 white"><span class="green-button">Доставка</span> и оплата</p>
+          <p id="di-desc" class="mon-500 white">По городу и пригород до 50 км - бесплатно</p>
+          <div id="delivery-blobs">
+            <div class="delivery-blob dg-shadow">
+              <img src="icons/truck.svg" class="delivery-blob-img">
+              <div>
+                <p class="mon-600 dark-blue delivery-blob-text-1">Быстрая доставка</p>
+                <p class="mon-400 dark-blue delivery-blob-text-2">Время ожидания курьера по адресу составляет 20 минут</p>
+              </div>
+            </div>
+            <div class="delivery-blob dg-shadow">
+              <img src="icons/wallet.svg" class="delivery-blob-img">
+              <div>
+                <p class="mon-600 dark-blue delivery-blob-text-1">Оплата</p>
+                <p class="mon-400 dark-blue delivery-blob-text-2">Оплата производится наличными курьеру за недельный рацион, согласно выбранному тарифному плану</p>
+              </div>
+            </div>
+            <div class="delivery-blob dg-shadow">
+              <img src="icons/timer.svg" class="delivery-blob-img">
+              <div>
+                <p class="mon-600 dark-blue delivery-blob-text-1">Перенос заказа</p>
+                <p class="mon-400 dark-blue delivery-blob-text-2">Если Вам необходимо пропустить следующий день, необходимо до 14-00 сообщить об этом оператору</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="delivery-functionality">
+          <img src="icons/krd_map.png" id="df-map">
+          <p id="df-desc" class="mon-500 white">Узнай, в какой зоне твой адрес:</p>
+          <input type="search" class="mon-500 grey" id="delivery-search" placeholder="Введите адрес">
+        </div>
+      </div>
+    </div>
+    <div id="faq">
+      <p class="jost-600 dark-blue" style="font-size: 36px; text-align: center;">Часто задаваемые <span class="green-button">вопросы</span></p>
+      <div id="faq-buttons">
+        <button class="faq-button jost-500 dark-blue dg-shadow">Доставка</button>
+        <button class="faq-button jost-500 dark-blue dg-shadow">Питание</button>
+        <button class="faq-button jost-500 dark-blue dg-shadow">Результаты</button>
+      </div>
+      <div id="faq-questions">
+        <details class="faq-question mon-400 dark-blue">
+          <summary class="faq-summary">Какая программа подойдет лично мне?</summary>
+          <p class="faq-answer">test</p>
+        </details>
+        <details class="faq-question mon-400 dark-blue">
+          <summary class="faq-summary">Можно ли подогревать блюда в контейнерах?</summary>
+          <p class="faq-answer">test</p>
+        </details>
+        <details class="faq-question mon-400 dark-blue">
+          <summary class="faq-summary">Как готовятся блюда?</summary>
+          <p class="faq-answer">test</p>
+        </details>
+        <details class="faq-question mon-400 dark-blue">
+          <summary class="faq-summary">Срок хранения наших блюд</summary>
+          <p class="faq-answer">test</p>
+        </details>
+        <details class="faq-question mon-400 dark-blue">
+          <summary class="faq-summary">Консультации специалистов</summary>
+          <p class="faq-answer">test</p>
+        </details>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav id="footer-nav">
+        <div id="fn-contacts" class="footer-nav-cat">
+          <label class="cat-label jost-600 white">
+            +7 (123) 45-67-89
+            <div class="cat-label-content">
+              <a href="#" id="ret-call" class="mon-400 green-button">Заказать обратный звонок</a>
+              <div>
+                <img src="icons/vk.svg" class="footer-icon">
+                <img src="icons/telegram.svg" class="footer-icon">
+              </div>
+            </div>
+          </label>
+        </div>
+        <div id="fn-faq" class="footer-nav-cat">
+          <label class="cat-label jost-600 white">
+            Вопросы
+            <div class="cat-label-content">
+              <p class="mon-400 white">Оплата</p>
+              <p class="mon-400 white">Вопросы</p>
+              <p class="mon-400 white">Вакансии</p>
+              <p class="mon-400 white">Отзывы</p>
+            </div>
+          </label>
+        </div>
+        <div id="fn-support" class="footer-nav-cat">
+          <label id="cat-label-50" class="cat-label jost-600 white">
+            Поддержка
+            <div class="cat-label-content">
+              <p class="mon-400 white">Оферта</p>
+              <p class="mon-400 white">Контакты</p>
+              <p class="mon-400 white">Политика конфиденциальности</p>
+            </div>
+          </label>
+        </div>
+        <div id="fn-ml" class="footer-nav-cat">
+          <label class="cat-label jost-600 white">
+            Рассылка новостей
+            <div class="cat-label-content">
+              <p class="mon-400 white" style="margin-top: 0px;">Подпишитесь на рассылку новостей</p>
+              <form id="email-form">
+                <input type="text" placeholder="Введите E-mail" class="mon-400" id="email-form-input">
+                <button class="jost-500 white" id="email-form-button">Отправить</button>
+              </form>
+            </div>
+          </label>
+        </div>
+      </nav>
+      <p class="mon-500" style="font-size: 16px; color: rgba(160, 163, 169, 1); margin-top: 50px;">© HealthyFood Delivery 2022</p>
+    </footer>
+    <script src="js/home.js"></script>
+  </body>
+</html>

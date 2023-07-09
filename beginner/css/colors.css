@@ -1,0 +1,35 @@
+.green {
+  color: rgba(90, 255, 21, 1);
+}
+
+.green-button {
+  color: rgba(50, 205, 50, 1);
+}
+
+.dark-blue {
+  color: rgba(3, 45, 60, 1);
+}
+
+.neutral {
+  color: rgba(27, 36, 48, 1);
+}
+
+.neutral-2 {
+  color: rgba(73, 80, 89, 1);
+}
+
+.base {
+  color: rgba(98, 98, 98, 1);
+}
+
+.grey {
+  color: rgba(185, 185, 185, 1);
+}
+
+.white {
+  color: rgba(255, 255, 255, 1); 
+}
+
+.dg-shadow {
+  box-shadow: 0px 0px 10px -2px rgba(50, 205, 50, 0.2);
+}
