@@ -556,7 +556,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 #complete-meals-header {
-  font-size: 32px; 
+  font-size: 36px; 
   margin: 0;
 }
 
@@ -646,7 +646,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 #order-details-header {
-  font-size: 32px;
+  font-size: 36px;
   margin: 0;
 }
 
@@ -716,8 +716,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 #review-header {
-  font-size: 32px;
-  margin-top: 140px;
+  font-size: 36px;
+  margin-top: 120px;
 }
 
 .rs-text-1 {
@@ -1774,4 +1774,4 @@ summary::-webkit-details-marker {
   }
 }
 
-/* TODO: сделать все хэдеры одного фонт-сайза */
+/* TODO: да вроде все */
