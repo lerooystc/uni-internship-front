@@ -113,6 +113,7 @@
   z-index: 1001;
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
   pointer-events: visibleFill;
+  box-shadow: 25px 25px 25px 25px rgba(0, 0, 0, 1);
 }
 
 #search-city {
